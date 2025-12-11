@@ -1,0 +1,32 @@
+name: .NET CI
+
+on:
+  push:
+    paths:
+      - 'src/C#/**'
+      - '.github/**'
+
+jobs:
+  build-test-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x' # Update as needed for your project
+
+      - name: Restore dependencies
+        run: dotnet restore src/C#/Pillont.Shodo.Logic.sln
+
+      - name: Build
+        run: dotnet build --no-restore --configuration Release src/C#/Pillont.Shodo.Logic.sln
+
+      - name: Run tests
+        run: dotnet test --no-build --configuration Release --verbosity normal src/C#/Pillont.Shodo.Logic.sln
+
+      - name: Check code format
+        run: dotnet format --no-restore --verify-no-changes src/C#/Pillont.Shodo.Logic.sln
