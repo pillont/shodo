@@ -1,5 +1,5 @@
 import unittest
-from pillont_shodo_logic.calculation import Calculation
+from logic.calculation import Calculation
 
 
 class TestCalculation(unittest.TestCase):

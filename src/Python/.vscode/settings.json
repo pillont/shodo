@@ -6,7 +6,7 @@
   "python.testing.unittestArgs": [
     "-v",
     "-s",
-    "./pillont_shodo_logic_test",
+    "./logic_test",
     "-p",
     "test*.py"
   ],
