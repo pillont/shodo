@@ -52,8 +52,7 @@ jobs:
       - name: Run pylint
         run: |
             source venv/bin/activate
-            pylint --rcfile=src/Python/.pylintrc $(find src/Python -name "*.py" ! -path "./.venv/*" ! -path "./venv/*") 
-
+            pylint --rcfile=src/Python/.pylintrc $(find src/Python/. -name "*.py" ! -path "./.venv/*" ! -path "./venv/*") 
 
       - name: Run mypy
         run: |
