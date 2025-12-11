@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\pillont.Shodo.Logic\pillont.Shodo.Logic.csproj" />
+    <ProjectReference Include="..\Pillont.Shodo.Logic\Pillont.Shodo.Logic.csproj" />
   </ItemGroup>
 
   <ItemGroup>
