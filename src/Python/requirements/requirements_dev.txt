@@ -1,0 +1,5 @@
+# Dev tools (linters, formatters, type checkers)
+mypy>=1.7
+flake8>=6.1
+black>=24.0
+pylint>=3.0
