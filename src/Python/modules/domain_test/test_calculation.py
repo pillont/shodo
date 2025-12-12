@@ -1,5 +1,6 @@
 import unittest
-from logic.calculation import Calculation
+
+from modules.domain.calculation import Calculation
 
 
 class TestCalculation(unittest.TestCase):
