@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Pillont.Shodo.Logic\Pillont.Shodo.Logic.csproj" />
+    <ProjectReference Include="..\Pillont.Shodo.Infrastructure\Pillont.Shodo.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

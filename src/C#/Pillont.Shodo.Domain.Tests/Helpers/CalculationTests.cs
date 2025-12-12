@@ -1,4 +1,7 @@
-﻿namespace pillont.Shodo.Logic.Tests;
+﻿
+using Pillont.Shodo.Domain.Helpers;
+
+namespace Pillont.Shodo.Domain.Tests.Helpers;
 
 public class CalculationTests
 {

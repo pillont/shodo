@@ -1,4 +1,4 @@
-﻿namespace pillont.Shodo.Logic;
+﻿namespace Pillont.Shodo.Domain.Helpers;
 
 public static class Calculation
 {
@@ -12,7 +12,7 @@ public static class Calculation
         long aAsLong = a;
         var bAsLong = b;
 
-        long res = aAsLong + bAsLong;
+        var res = aAsLong + bAsLong;
 
         AssertIsValidAsInt(res);
 
