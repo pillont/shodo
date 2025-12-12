@@ -1,5 +1,4 @@
-﻿
-using Pillont.Shodo.Infrastructure.Weather;
+﻿using Pillont.Shodo.Infrastructure.Weather;
 
 namespace Pillont.Shodo.Infrastructure.Tests.Weather;
 
@@ -10,7 +9,7 @@ public class LocalWeatherProviderTest
         Provider = new LocalWeatherProvider();
     }
 
-    private  LocalWeatherProvider Provider { get; }
+    private LocalWeatherProvider Provider { get; }
 
     [Fact]
     public async Task GetAsync_ShouldReturnRainingWeather_ByDefaultBecauseWeAreInBrittany_TestAsync()

@@ -7,7 +7,6 @@ namespace Pillont.Shodo.Infrastructure;
 
 public static class GetWeatherExtension
 {
-
     public static IServiceCollection AddGetWeather(this IServiceCollection collection)
     {
         return collection.AddSingleton<IRequestHandler<GetWeatherCommand, WeatherModel>, GetWeatherHandler>();

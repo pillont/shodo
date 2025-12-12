@@ -5,13 +5,13 @@ namespace Pillont.Shodo.Infrastructure.Weather;
 
 public class LocalWeatherProvider : IWeatherProvider
 {
-    private WeatherModel CurrentWeather { get; set; } = new WeatherModel() 
-    { 
-        IsRaining = true 
+    private WeatherModel CurrentWeather { get; set; } = new WeatherModel()
+    {
+        IsRaining = true
     };
 
     public Task<WeatherModel> GetAsync()
     {
-        return Task.FromResult(CurrentWeather );
+        return Task.FromResult(CurrentWeather);
     }
 }

@@ -1,5 +1,4 @@
-﻿
-using Pillont.Shodo.Domain.Helpers;
+﻿using Pillont.Shodo.Domain.Helpers;
 
 namespace Pillont.Shodo.Domain.Tests.Helpers;
 
@@ -14,11 +13,9 @@ public class CalculationTests
         res = Calculation.Add(5, 8);
         Assert.Equal(13, res);
 
-
         res = Calculation.Add(100, 10);
         Assert.Equal(110, res);
     }
-
 
     [Fact]
     public void Add_NegatifNumber_ShouldMakeSubtract()
@@ -44,7 +41,6 @@ public class CalculationTests
 
         res = Calculation.Add(-5, 0);
         Assert.Equal(-5, res);
-
 
         res = Calculation.Add(0, 10);
         Assert.Equal(10, res);
@@ -77,7 +73,6 @@ public class CalculationTests
         var res = Calculation.Add(0, int.MinValue);
         Assert.Equal(-2147483648, res);
 
-
         res = Calculation.Add(-2147483638, -10);
         Assert.Equal(-2147483648, res);
     }
@@ -87,7 +82,6 @@ public class CalculationTests
     {
         var res = Calculation.Add(0, int.MaxValue);
         Assert.Equal(2147483647, res);
-
 
         res = Calculation.Add(2147483637, 10);
         Assert.Equal(2147483647, res);

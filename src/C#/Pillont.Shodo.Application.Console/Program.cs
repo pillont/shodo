@@ -16,7 +16,7 @@ Console.WriteLine(text);
 async Task<string> GetWeatherText()
 {
     var weather = await GetWeather();
- 
+
     return WeatherTextMapper.GetWeatherText(weather);
 }
 
@@ -26,4 +26,3 @@ async Task<WeatherModel> GetWeather()
 
     return await mediator.Send(new GetWeatherCommand());
 }
-
