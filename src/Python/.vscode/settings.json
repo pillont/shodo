@@ -1,4 +1,8 @@
 {
+  // Ensures VS Code uses the workspace venv interpreter
+  "python.defaultInterpreterPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": [],
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "black",
@@ -6,10 +10,14 @@
   "python.testing.unittestArgs": [
     "-v",
     "-s",
-    "./logic_test",
+    "modules",
     "-p",
     "test*.py"
   ],
   "python.testing.pytestEnabled": false,
-  "python.testing.unittestEnabled": true
+  "python.testing.unittestEnabled": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUnknownMemberType": "none",
+    "reportAbstractUsage": "none"
+  }
 }

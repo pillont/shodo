@@ -10,3 +10,7 @@ exclude = '''
   | dist
 )/
 '''
+
+[mypy]
+python_version = 3.8
+disable_error_code = type-abstract

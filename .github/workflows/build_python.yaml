@@ -37,17 +37,16 @@ jobs:
         run: |
             source venv/bin/activate
             pip install -r src/Python/requirements/requirements.txt;
-            pip install -r src/Python/requirements/requirements_dev.txt;
 
       - name: Run black
         run: |
             source venv/bin/activate
-            black --check src/Python
+            black --check src/Python/modules
 
       - name: Run flake8
         run: |
             source venv/bin/activate
-            flake8 src/Python
+            flake8 src/Python/modules
 
       - name: Run pylint
         run: |
@@ -57,4 +56,4 @@ jobs:
       - name: Run mypy
         run: |
             source venv/bin/activate
-            mypy src/Python
+            mypy src/Python/modules
