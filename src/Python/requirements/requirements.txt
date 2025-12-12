@@ -1,6 +1,5 @@
 # Core project dependencies 
 di
-diator
 anyio
 
 # TODO : split in 2 files
