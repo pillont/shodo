@@ -5,8 +5,9 @@ public static class WeatherTextMapper
 {
     public static string GetWeatherText(WeatherModel weather)
     {
-        return weather.IsRaining
-            ? "It's raining, of course we are in britany"
-            : "WTF ! What is this fireball on the sky ?!";
+        if(!weather.IsRaining)
+            return "WTF ! What is this fireball on the sky ?!";
+
+        return "It's raining, of course we are in britany";
     }
 }
