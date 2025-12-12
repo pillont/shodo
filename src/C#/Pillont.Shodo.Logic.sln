@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pillont.Shodo.Logic", "Pillont.Shodo.Logic\Pillont.Shodo.Logic.csproj", "{1838CB97-C012-019B-722D-1C3E560701F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pillont.Shodo.Logic.Tests", "Pillont.Shodo.Logic.Tests\Pillont.Shodo.Logic.Tests.csproj", "{53B1664D-76D2-23BF-0E49-068E45F27CA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1838CB97-C012-019B-722D-1C3E560701F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1838CB97-C012-019B-722D-1C3E560701F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1838CB97-C012-019B-722D-1C3E560701F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1838CB97-C012-019B-722D-1C3E560701F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B1664D-76D2-23BF-0E49-068E45F27CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B1664D-76D2-23BF-0E49-068E45F27CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B1664D-76D2-23BF-0E49-068E45F27CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B1664D-76D2-23BF-0E49-068E45F27CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8341CBDF-0522-4AC2-9442-EEA6D6F1A4BC}
+	EndGlobalSection
+EndGlobal
