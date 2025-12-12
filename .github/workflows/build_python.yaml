@@ -57,3 +57,6 @@ jobs:
         run: |
             source venv/bin/activate
             mypy src/Python/modules
+
+      - name: Run unit tests
+        run: python -m unittest discover -v -s src/Python/modules -p "test*.py"
